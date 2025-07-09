@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/00e04b7b1e.js" crossorigin="anonymous"></script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<body>
+    <div id="header">
+        <video autoplay loop muted playsinline id="bg-video">
+  <source src="istockphoto-1616897621-640_adpp_is.mp4" type="video/mp4">
+        </video>
+        <div class="container"> 
+             <nav>
+                <p id="logo"></p>
+                <ul id="sidemenu">
+                    <li id="option1"><a href="#header">Home</a></li>
+                    <li id="option2"><a href="#about">About</a></li>
+                    <li id="option3"><a href="#projects">Projects</a></li>
+                    <li id="option4"><a href="#contact">Contact</a></li>  
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                </ul>
+                <i id="menu" class="fa-solid fa-bars"></i>
+            </nav>
+            <img class="head-logo" src="ChatGPT Image Jul 8, 2025, 07_18_04 PM.png" height="300px" width="200px">
+            <div class="header-text"> 
+                <h1>Hi,I'm <span>Prasun</span><br>Jha From India~
+                <p>I'm into <span id="typing"></span></p>
+                </h1>
+                <br>
+                <p id="quote">"Quantity in Hardwork'<br>
+                   'Quality in Exceution~'" 
+                </p>
+                <div id="hght"></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="WhatsApp Image 2025-07-03 at 00.51.57.jpeg">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me ~</h1>
+                    <p id="first_msg">🚀 I’m a motivated and enthusiastic Computer Science fresher with a strong grip on Data Structures & Algorithms, a deep interest in Competitive Programming, and practical experience in Web Development.</p>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                   <div class="tab-contents active tab" id="skills">
+                    <ul id="responsive">
+                        <li><span>Competitive Programmer :~</span><br><h2>1400(codechef) || 1441(Leetcode) || 942(codeforces)</h2></li>
+                        <li><span>Problem Solver :~</span><br><h2>solved 550+ questions of DSA || CP</h2></li>
+                        <li><span>Web-Developer :~</span><br><h2>Responsible for building good user interfaces</h2></li>
+                    </ul>
+                </div>
+                    <div class="tab-contents" id="certifications">
+                    <ul id="responsive">
+                        <li><span>Programming in Java :~</span><br>
+                            <p id="des">Achieved 85% on an online certification course of programming in java by NPTEL<br>
+                         <a href="https://github.com/prasunjha-codeExplorer/NPTEL-JAVA__Flipkart-Grid" target="_blank">click here to get the result!</a></p>
+                        </li>
+                        <li><span>Flipkart Grid :~</span><br>
+                        <p id="des">Participated in level:1 of E-commerce & Tech-quiz of flipkart-grid 6.0<br>
+                        <a href="https://github.com/prasunjha-codeExplorer/NPTEL-JAVA__Flipkart-Grid" target="_blank">click here to get the result!</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul id="responsive">
+                        <li><span>2020 :~</span><br><h2>Matriculation Examination(90%)</h2></li>
+                        <li><span>2023 :~</span><br><h2>Higher secondary education(74.45%)</h2></li>
+                        <li><span>2023-2027 :~</span><br><h2>Btech from Kolkata</h2></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- projects -->
+     <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects ~</h1>
+            <div class="projects-lists">
+                <div class="p1">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>🕹️ Tic-Tac-Toe</h2> 
+                    <p>A simple yet fully functional 2-player game built using HTML, CSS, and JavaScript, designed with a clean and responsive user interface.</p>
+                    <a href="#">click here</a>
+                </div>
+                <div class="p2">
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>✊✋✌️Rock-Paper-Scissors</h2>
+                    <p>A quick, interactive single-player game where users challenge the computer in the timeless Rock-Paper-Scissors match-up — built entirely with HTML, CSS, and JavaScript.</p>
+                    <a href="#">click here</a>
+                 </div>
+                <div class="p3">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>🛒 Amazon Clone – Frontend UI</h2>
+                    <p>A visually accurate frontend clone of the Amazon India homepage, built entirely with HTML and CSS, to practice real-world layout and responsive web design.</p>
+                    <a href="#">click here</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <hr>
+     <!-- contact -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me ~</h1>
+                    <div id="contact_des">"I'd love to get in touch with you!<br>
+Whether it’s for a project, collaboration, or just a friendly chat, I’m all ears.
+Drop a message anytime—your words are always welcome.
+Let’s create something great together!"</div>
+                    <p><i class="fa-solid fa-envelope"></i>  prasunjha9431@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 7979811192</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/prasun-jha-a187ba2b6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/prasunjha__" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://codolio.com/profile/prasunjha__/problemSolving" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/prasunjha-codeExplorer"  target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/prasunn___/"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Download CV</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input class="c1" type="text" name="Name" placeholder="Name*" required>
+                        <input class="c2" type="email" name="email" placeholder="Email*" required>
+                        <textarea class="c3" name="Message" rows="6" placeholder="Message*" required></textarea>
+                        <button class="btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+         <p class="first">Made with &hearts; by Prasun</p>
+         <p id="contact-checker"></p>
+        </div>
+     </div>
+    <script src="index.js"></script>
+</body>
+</html>
