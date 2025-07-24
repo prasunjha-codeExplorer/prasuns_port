@@ -355,10 +355,10 @@ nav ul li a:hover{
 nav .fa-solid{
     display: none;
 }
-#skills{
-    transition: background 0.5s, transform 0.5s;
+#show-details{
+    color:#ff004f;
+    font-size: 20px;
 }
-
 
 /* Making our portfolio responsive for small screens */
 
@@ -368,7 +368,7 @@ nav .fa-solid{
         font-size: 20px;
     }   
     #quote{
-        font-size: 15px;
+        font-size: 25px;
         margin-top: 10px;
     }
     .head-logo{
@@ -454,5 +454,9 @@ nav .fa-solid{
    nav ul li a:hover{
     color: #fff;
     font-weight: bolder;
+}
+#show-details{
+    color:#ff004f;
+    font-size: 17px;
 }
 }
