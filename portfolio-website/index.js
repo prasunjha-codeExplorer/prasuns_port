@@ -21,10 +21,10 @@ const p2 = document.querySelector(".p2");
 const p3 = document.querySelector(".p3");
 
 p1.addEventListener("click", () => {
-    window.open("https://tic-tac-toe-game-xi-three.vercel.app/","_blank");
+    window.open("https://tic-tac-toe-game-rhoi.vercel.app/","_blank");
 });
 p2.addEventListener("click", () => {
-    window.open("https://rock-paper-scissors-eight-rust.vercel.app/","_blank");
+    window.open("https://rock-paper-scissors-vggl.vercel.app/","_blank");
 });
 p3.addEventListener("click", () => {
    window.open("https://amazon-clone-woad-one.vercel.app/","_blank");
@@ -120,4 +120,10 @@ option3.addEventListener("click", () =>{
 
 option4.addEventListener("click", () =>{
   sidemenu.style.right = "-200px";
+})
+
+const show_details = document.querySelector("#show-details");
+const tab_titles = document.querySelector(".tab-titles");
+tab_titles.addEventListener("click", () => {
+   show_details.style.fontSize = "0px";
 })
