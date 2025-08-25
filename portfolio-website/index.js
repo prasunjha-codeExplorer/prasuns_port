@@ -19,6 +19,8 @@ const typed = new Typed("#typing", {
 const p1 = document.querySelector(".p1");
 const p2 = document.querySelector(".p2");
 const p3 = document.querySelector(".p3");
+const p4 = document.querySelector(".p4");
+const p5 = document.querySelector(".p5");
 
 p1.addEventListener("click", () => {
     window.open("https://tic-tac-toe-game-rhoi.vercel.app/","_blank");
@@ -29,6 +31,12 @@ p2.addEventListener("click", () => {
 p3.addEventListener("click", () => {
    window.open("https://amazon-clone-woad-one.vercel.app/","_blank");
 });
+p4.addEventListener("click", () => {
+  window.open("https://gaming-website-silk-gamma.vercel.app/");
+})
+p5.addEventListener("click", () => {
+  window.open("https://donation-website-phi.vercel.app/");
+})
 
 const btn = document.querySelector(".btn");
 btn.addEventListener("click", () => {
