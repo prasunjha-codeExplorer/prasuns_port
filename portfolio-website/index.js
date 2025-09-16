@@ -40,7 +40,7 @@ p5.addEventListener("click", () => {
 
 const btn = document.querySelector(".btn");
 btn.addEventListener("click", () => {
-    window.open("https://github.com/prasunjha-codeExplorer/Prasun-s_Resume/blob/main/updatedResume3.pdf","_blank");
+    window.open("https://github.com/prasunjha-codeExplorer/MY_RESUME/tree/main","_blank");
 });
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbytSkpEBN99YkpZimpsmTt_Cn0itWU_KOFC1KMAzU67VtdPYzyEg3V6wPYJe3tJAAf-/exec'
@@ -135,3 +135,4 @@ const tab_titles = document.querySelector(".tab-titles");
 tab_titles.addEventListener("click", () => {
    show_details.style.fontSize = "0px";
 })
+
