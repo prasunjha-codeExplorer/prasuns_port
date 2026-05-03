@@ -1,354 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prasun | Portfolio</title>
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/00e04b7b1e.js" crossorigin="anonymous"></script>
-
-  <!-- Typed JS -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/00e04b7b1e.js" crossorigin="anonymous"></script>
 </head>
-
-<body>
-
-  <!-- ================= NAVBAR ================= -->
-
-  <header id="header">
-
-    <video autoplay muted loop playsinline id="bg-video">
-      <source src="istockphoto-1616897621-640_adpp_is.mp4" type="video/mp4">
-    </video>
-
-    <nav>
-
-      <h2 class="logo">Prasun.</h2>
-
-      <ul id="sidemenu">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-        <i class="fa-solid fa-xmark" id="close"></i>
-      </ul>
-
-      <i class="fa-solid fa-bars" id="menu"></i>
-
-    </nav>
-
-    <!-- ================= HERO ================= -->
-
-    <div class="hero-container">
-
-      <div class="hero-left">
-
-        <p class="intro">Hello, I'm</p>
-
-        <h1>
-          Prasun <span>Jha</span>
-        </h1>
-
-        <h3>
-          I'm into <span id="typing"></span>
-        </h3>
-
-        <p class="hero-description">
-          Passionate about DSA, Competitive Programming,
-          and building interactive web experiences.
-        </p>
-
-        <div class="hero-buttons">
-
-          <a href="#projects" class="btn primary-btn">
-            View Projects
-          </a>
-
-          <a href="https://github.com/prasunjha-codeExplorer"
-             target="_blank"
-             class="btn secondary-btn">
-
-             GitHub
-          </a>
-
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<body class="body">
+    <div id="header">
+        <video autoplay loop muted playsinline id="bg-video">
+  <source src="istockphoto-1616897621-640_adpp_is.mp4" type="video/mp4">
+        </video>
+        <div class="container"> 
+             <nav>
+                <p id="logo"></p>
+                <ul id="sidemenu">
+                    <li id="option1"><a href="#header">Home</a></li>
+                    <li id="option2"><a href="#about">About</a></li>
+                    <li id="option3"><a href="#projects">Projects</a></li>
+                    <li id="option4"><a href="#contact">Contact</a></li>  
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                </ul>
+                <i id="menu" class="fa-solid fa-bars"></i>
+            </nav>
+            <img class="head-logo" src="ChatGPT Image Jul 8, 2025, 07_18_04 PM.png" height="300px" width="200px">
+            <div class="header-text"> 
+                <h1>Hi,I'm <span>Prasun</span><br>Jha From India~
+                <p>I'm into <span id="typing"></span></p>
+                </h1>
+                <br>
+                <p id="quote">"Quantity in Hardwork'<br>
+                   'Quality in Exceution~'" 
+                </p>
+                <div id="hght"></div>
+            </div>
         </div>
-
-      </div>
-
-      <div class="hero-right">
-
-        <img
-          src="ChatGPT Image Jul 8, 2025, 07_18_04 PM.png"
-          alt="Prasun Profile"
-          class="hero-image"
-        >
-
-      </div>
-
     </div>
-
-  </header>
-
-  <!-- ================= ABOUT ================= -->
-
-  <section id="about">
-
-    <div class="container">
-
-      <h1 class="section-title">
-        About Me
-      </h1>
-
-      <div class="about-container">
-
-        <div class="about-image">
-
-          <img
-            src="WhatsApp Image 2025-07-03 at 00.51.57.jpeg"
-            alt="Prasun"
-          >
-
+    <hr>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="WhatsApp Image 2025-07-03 at 00.51.57.jpeg">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me ~</h1>
+                    <p id="first_msg">🚀 I’m a motivated and enthusiastic Computer Science fresher with a strong grip on Data Structures & Algorithms, a deep interest in Competitive Programming, and practical experience in Web Development.</p>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <p id="show-details">Please click any of the above options to get the details~</p>
+                   <div class="tab-contents active tab" id="skills">
+                    <ul id="responsive">
+                        <li><span>Competitive Programmer :~</span><br><h2>1400(codechef) || 1441(Leetcode) || 972(codeforces)</h2></li>
+                        <li><span>Problem Solver :~</span><br><h2>solved 550+ questions of DSA || CP</h2></li>
+                        <li><span>Web-Developer :~</span><br><h2>Responsible for building good user interfaces</h2></li>
+                    </ul>
+                </div>
+                    <div class="tab-contents" id="certifications">
+                    <ul id="responsive">
+                        <li><span>Programming in Java :~</span><br>
+                            <p id="des">Achieved 85% on an online certification course of programming in java by NPTEL<br>
+                         <a href="https://github.com/prasunjha-codeExplorer/NPTEL-JAVA__Flipkart-Grid" target="_blank">click here to get the result!</a></p>
+                        </li>
+                        <li><span>Flipkart Grid :~</span><br>
+                        <p id="des">Participated in level:1 of E-commerce & Tech-quiz of flipkart-grid 6.0<br>
+                        <a href="https://github.com/prasunjha-codeExplorer/NPTEL-JAVA__Flipkart-Grid" target="_blank">click here to get the result!</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul id="responsive">
+                        <li><span>2020 :~</span><br><h2>Matriculation Examination(90%)</h2></li>
+                        <li><span>2023 :~</span><br><h2>Higher secondary education(74.45%)</h2></li>
+                        <li><span>2023-2027 :~</span><br><h2>Pursuing Btech from Kolkata</h2></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
         </div>
-
-        <div class="about-content">
-
-          <p>
-            🚀 I’m a motivated Computer Science student with strong
-            problem-solving skills and a deep interest in Competitive Programming,
-            Data Structures & Algorithms, and modern Web Development.
-          </p>
-
-          <div class="skills-grid">
-
-            <span>Java</span>
-            <span>DSA</span>
-            <span>Competitive Programming</span>
-            <span>React</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>SQL</span>
-
-          </div>
-
-          <div class="achievement-box">
-
-            <h3>Achievements</h3>
-
-            <ul>
-              <li>⭐ 550+ DSA Problems Solved</li>
-              <li>⭐ CodeChef Rating: 1400</li>
-              <li>⭐ LeetCode Rating: 1441</li>
-              <li>⭐ Codeforces Rating: 972</li>
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
-
     </div>
-
-  </section>
-
-  <!-- ================= PROJECTS ================= -->
-
-  <section id="projects">
-
-    <div class="container">
-
-      <h1 class="section-title">
-        My Projects
-      </h1>
-
-      <div class="projects-grid">
-
-        <!-- PROJECT CARD -->
-
-        <div class="project-card">
-
-          <i class="fa-solid fa-gamepad"></i>
-
-          <h2>Tic Tac Toe</h2>
-
-          <p>
-            Interactive 2-player game built with
-            HTML, CSS, and JavaScript.
-          </p>
-
-          <div class="project-links">
-
-            <a href="https://tic-tac-toe-game-rhoi.vercel.app/"
-               target="_blank">
-
-               Live Demo
-            </a>
-
-          </div>
-
+    <hr>
+    <!-- projects -->
+     <div id="projects grid-container">
+        <div class="container">
+            <h1 class="sub-title">My Projects ~</h1>
+            <div class="projects-lists">
+                <div class="p1">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>🕹️ Tic-Tac-Toe</h2> 
+                    <p>A simple yet fully functional 2-player game built using HTML, CSS, and JavaScript, designed with a clean and responsive user interface.</p>
+                    <a href="#">click here</a>
+                </div>
+                <div class="p2">
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>✊✋✌️Rock-Paper-Scissors</h2>
+                    <p>A quick, interactive single-player game where users challenge the computer in the timeless Rock-Paper-Scissors match-up — built entirely with HTML, CSS, and JavaScript.</p>
+                    <a href="#">click here</a>
+                 </div>
+                <div class="p3">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>🛒 Amazon Clone – Frontend UI</h2>
+                    <p>A visually accurate frontend clone of the Amazon India homepage, built entirely with HTML and CSS, to practice real-world layout and responsive web design.</p>
+                    <a href="#">click here</a>
+                </div>
+                    <div class="p4">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Gaming-Website</h2>
+                    <p>An interactive exploration website built with HTML, CSS, and JavaScript, where users can explore different sections and elements in a game-like environment.</p>
+                    <a href="#">click here</a>
+                </div>
+                    <div class="p5">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Donation-Website</h2>
+                    <p>A donation platform created with HTML, CSS, and JavaScript to raise funds and support people in need.</p>
+                    <a href="#">click here</a>
+                </div>
+                <div class="p6">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Calculator-App</h2>
+                    <p>"A minimal React calculator for performing basic math operations with a modern UI."</p>
+                    <a href="calculator-reactjs-teal.vercel.app">click here</a>
+                </div>
+                <div class="p7">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>To-do-App</h2>
+                    <p>"A minimal React To-Do app for managing daily tasks"</p>
+                    <a href="to-do-reactjs-seven.vercel.app">click here</a>
+                </div>
+            </div>
         </div>
-
-        <!-- PROJECT CARD -->
-
-        <div class="project-card">
-
-          <i class="fa-solid fa-hand-back-fist"></i>
-
-          <h2>Rock Paper Scissors</h2>
-
-          <p>
-            Fun single-player game against the computer
-            with dynamic interactions.
-          </p>
-
-          <div class="project-links">
-
-            <a href="https://rock-paper-scissors-vggl.vercel.app/"
-               target="_blank">
-
-               Live Demo
-            </a>
-
-          </div>
-
+     </div>
+     <hr>
+     <!-- contact -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me ~</h1>
+                    <div id="contact_des">"I'd love to get in touch with you!<br>
+Whether it’s for a project, collaboration, or just a friendly chat, I’m all ears.
+Drop a message anytime—your words are always welcome.
+Let’s create something great together!"</div>
+                    <p><i class="fa-solid fa-envelope"></i>  prasunjha9431@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 7979811192</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/prasun-jha-a187ba2b6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/prasunjha__" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://codolio.com/profile/prasunjha__/problemSolving" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/prasunjha-codeExplorer"  target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/prasunn___/"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Download CV</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input class="c1" type="text" name="Name" placeholder="Name*" required>
+                        <input class="c2" type="email" name="email" placeholder="Email*" required>
+                        <textarea class="c3" name="Message" rows="6" placeholder="Message*" required></textarea>
+                        <button class="btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-
-        <!-- PROJECT CARD -->
-
-        <div class="project-card">
-
-          <i class="fa-solid fa-cart-shopping"></i>
-
-          <h2>Amazon Clone</h2>
-
-          <p>
-            Frontend clone of Amazon India built
-            using HTML and CSS.
-          </p>
-
-          <div class="project-links">
-
-            <a href="https://amazon-clone-woad-one.vercel.app/"
-               target="_blank">
-
-               Live Demo
-            </a>
-
-          </div>
-
+        <hr>
+        <div class="copyright">
+         <p class="first">Made with &hearts; by Prasun</p>
+         <p id="contact-checker"></p>
         </div>
-
-        <!-- PROJECT CARD -->
-
-        <div class="project-card">
-
-          <i class="fa-solid fa-calculator"></i>
-
-          <h2>React Calculator</h2>
-
-          <p>
-            Minimal calculator application developed
-            with ReactJS.
-          </p>
-
-          <div class="project-links">
-
-            <a href="https://calculator-reactjs-teal.vercel.app"
-               target="_blank">
-
-               Live Demo
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ================= CONTACT ================= -->
-
-  <section id="contact">
-
-    <div class="container">
-
-      <h1 class="section-title">
-        Contact Me
-      </h1>
-
-      <div class="contact-container">
-
-        <div class="contact-left">
-
-          <p>
-            Let's connect and build something amazing together 🚀
-          </p>
-
-          <div class="social-icons">
-
-            <a href="https://github.com/prasunjha-codeExplorer" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/prasun-jha-a187ba2b6/" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <a href="https://x.com/prasunjha__" target="_blank">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="contact-right">
-
-          <form>
-
-            <input type="text" placeholder="Your Name" required>
-
-            <input type="email" placeholder="Your Email" required>
-
-            <textarea rows="6" placeholder="Your Message"></textarea>
-
-            <button type="submit" class="btn primary-btn">
-              Send Message
-            </button>
-
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ================= FOOTER ================= -->
-
-  <footer>
-
-    <p>
-      © 2026 Prasun Jha | Built with HTML CSS & JavaScript
-    </p>
-
-  </footer>
-
-  <script src="index.js"></script>
-
+     </div>
+    <script src="index.js"></script>
 </body>
 </html>
+
